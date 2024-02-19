@@ -1,0 +1,33 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 60px;
+}
+
+.message {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 2em;
+}
+
+.image {
+    padding: 20px;
+    margin: 30px;
+}
+
+.img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.desc{
+    margin: 30px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice Page</h1>
+    <h3>Student List </h3>
+    <ul>
+        <li>
+            Courses {{info.0.name}} take: {{info.0.courses|join:", "}}
+        </li>
+        <li>
+            Courses {{info.1.name}} take: {{info.1.courses|join:", "|default:"No courses"}}
+        </li>
+        <li>
+            ID of {{info.2.name}} is 4 less than {{info.2.id|add:"4"}}
+        </li>
+        <li>
+           Capfirst applied on {{info.3.name|capfirst}} 
+        </li>
+        <li>
+            Courses {{info.4.name}} takes: {{info.4.courses|join:", "|cut:","}}
+        </li>
+        <li>First course taken by {{info.5.name}} is {{info.5.courses|first}}</li>
+        <li>Total number of courses taken by {{info.6.name}} is {{info.6.courses|length}}</li>
+        <li>Random student name: {{info|random}} </li>
+        <li>Courses taken by {{info.7.name}} are: {{info.7.courses|join:" "|truncatewords:2}}</li>
+    </ul>
+
+</body>
+</html>
